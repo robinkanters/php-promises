@@ -1,0 +1,30 @@
+{
+  "name": "robinkanters/promises",
+  "description": "Library to execute tasks asynchronously.",
+  "type": "library",
+  "license": "GPL-2.0",
+  "authors": [
+    {
+      "name": "Robin Kanters",
+      "email": "robin@robinkanters.nl"
+    }
+  ],
+  "minimum-stability": "stable",
+  "autoload": {
+    "psr-4": {
+      "RobinKanters\\Promises\\": "src/"
+    }
+  },
+  "require": {
+    "ext-pcntl": "*",
+    "php": "~5.5 || ^7.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^4.8"
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-develop": "1.0.x-dev"
+    }
+  }
+}
