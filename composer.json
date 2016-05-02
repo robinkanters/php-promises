@@ -2,9 +2,6 @@
   "name": "robinkanters/promises",
   "description": "Library to execute tasks asynchronously.",
   "type": "library",
-  "require": {
-    "ext-pcntl": "*"
-  },
   "license": "GPL-2.0",
   "authors": [
     {
@@ -17,5 +14,11 @@
     "psr-4": {
       "RobinKanters\\Promises\\": "src/"
     }
+  },
+  "require": {
+    "ext-pcntl": "*"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^4.8"
   }
 }
