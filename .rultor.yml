@@ -10,6 +10,6 @@ install:
   - "php composer.phar install"
 merge:
   script: |
-    echo Temporary
+    php ./vendor/bin/phpunit
   fast-forward: only
   rebase: true
