@@ -12,12 +12,11 @@ class PromiseProcessor
 
     public function processQueue(PromiseQueueInterface $queue, $maxConcurrent = self::MAX_CONCURRENT_TASKS, $pidWaitTimeout = self::WAIT_TIMEOUT)
     {
-        $promises = $queue->take($maxConcurrent);
+        while ($queue->length() > 0) {
+            $promises = $queue->take($maxConcurrent);
 
-        $this->deliverPromises($promises, $pidWaitTimeout);
-
-        if ($queue->length() > 0)
-            $this->processQueue($queue, $maxConcurrent, $pidWaitTimeout);
+            $this->deliverPromises($promises, $pidWaitTimeout);
+        }
     }
 
     /**
