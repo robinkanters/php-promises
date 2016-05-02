@@ -4,7 +4,6 @@ docker:
 
 merge:
   script: |
-    git clean -fdq
-    composer install
+    echo Temporary
   fast-forward: only
   rebase: true
