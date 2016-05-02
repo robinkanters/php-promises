@@ -1,0 +1,9 @@
+
+# Ignore all hidden files and directories, except for .gitignore
+.*
+!/.gitignore
+
+/vendor
+
+/composer.lock
+/*.iml

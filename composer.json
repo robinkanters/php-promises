@@ -1,0 +1,16 @@
+{
+    "name": "robinkanters/promises",
+    "description": "Library to execute tasks asynchronously.",
+    "type": "library",
+    "require": {
+        "ext-pcntl": "*"
+    },
+    "license": "GPL-2.0",
+    "authors": [
+        {
+            "name": "Robin Kanters",
+            "email": "robin@robinkanters.nl"
+        }
+    ],
+    "minimum-stability": "stable"
+}
