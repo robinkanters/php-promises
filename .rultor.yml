@@ -1,0 +1,7 @@
+
+docker:
+  image: "ubuntu:14.10"
+
+merge:
+  fast-forward: only
+  rebase: true
