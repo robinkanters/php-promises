@@ -3,5 +3,8 @@ docker:
   image: "ubuntu:14.10"
 
 merge:
+  script: |
+    git clean -fdq
+    composer install
   fast-forward: only
   rebase: true
