@@ -29,8 +29,7 @@ class PromiseQueue implements PromiseQueueInterface
      */
     public function take($amount)
     {
-        $i = 0;
-        while (++$i <= $amount && $item = $this->takeOne()) {
+        for ($i=0; $i < $amount && $item = $this->takeOne(); $i++) {
             if (is_null($item)) break;
             yield $item;
         }
