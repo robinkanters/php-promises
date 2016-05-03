@@ -13,6 +13,7 @@ class PromiseQueue implements PromiseQueueInterface
     public function addAll(array $promises)
     {
         array_walk($promises, function (AbstractPromise $p) {
+            $this->add($p);
         });
     }
 
