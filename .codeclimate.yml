@@ -1,0 +1,6 @@
+engines:
+  phpmd:
+    enabled: true
+    exclude_fingerprints:
+    - aa30b9304c4b2cdd40d8f9dc70b021ec
+    - 98273c2266b7c40258c52210cdec1563

@@ -1,6 +1,7 @@
 
-# Ignore all hidden files and directories, except for .gitignore
+# Ignore all hidden files and directories, except for a few
 .*
+!/.codeclimate.yml
 !/.gitignore
 
 /vendor
