@@ -9,3 +9,6 @@ install:
   - composer install
 script:
   - php ./vendor/bin/phpunit
+matrix:
+  allow_failures:
+    - php: nightly
